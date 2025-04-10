@@ -73,14 +73,14 @@ body {
 }
 
 footer {
-    position: absolute;
-    bottom: 1rem;
-    width: 100%;
-    text-align: center;
+    margin-top: 1.5rem; /* Adds spacing between the card and footer */
     font-size: 0.9rem;
+    color: #555;
+    text-align: center; /* Centers footer text */
+    width: 100%; /* Ensures footer spans the width of the page */
 }
 
 footer a {
-    color: #ff6f61;
+    color: #ff4500;
     text-decoration: none;
 }
