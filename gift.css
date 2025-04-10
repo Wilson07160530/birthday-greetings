@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: #333;
+    display: flex;
+    flex-direction: column; /* Aligns items vertically */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.card {
+    max-width: 600px;
+    width: 100%;
+    padding: 1.5rem;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.card h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+p {
+    background-color: transparent; /* Removes background */
+    text-decoration: underline;    /* Adds underline */
+    color: #333;                   /* Optional: keep text readable */
+}
+
+.card img {
+    max-width: 50%;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.gift-option {
+    display: inline-block;
+    margin: 1rem;
+    text-align: center;
+    width: 150px;
+}
+
+.gift-option img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.gift-option p {
+    margin: 0.5rem 0 1rem;
+    font-size: 1rem;
+}
+a {
+    background-color: transparent; /* Removes background */
+    text-decoration: none; /* Optional: keeps links clean */
+    color: #d125ac; /* Optional: keeps your custom link color */
+}
+
+
+
+.card button {
+    background: #be2a81;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.card button:hover {
+    background: #e55a4e;
+}
+
+button:hover {
+    background-color: #e03d00;
+}
+
+footer {
+    margin-top: 1.5rem; /* Adds spacing between the card and footer */
+    font-size: 0.9rem;
+    color: #555;
+    text-align: center; /* Centers footer text */
+    width: 100%; /* Ensures footer spans the width of the page */
+}
+
+footer a {
+    color: #ff4500;
+    text-decoration: none;
+}

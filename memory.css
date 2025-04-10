@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Keep horizontal centering */
+    justify-content: flex-start; /* Align content to the top */
+    height: 100vh;
+    text-align: center;
+    position: relative;
+    padding-top: 2rem; /* Adjust space from top */
+}
+
+button {
+    margin-top: 1.5rem;
+}
+
+
+.card {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 80%;
+    margin-top: 0.5rem;
+    animation: continuousScale 1.5s ease-in-out infinite; /* Apply the animation */
+}
+
+@keyframes continuousScale {
+    0% {
+        transform: scale(1); /* Start at the original size */
+    }
+    50% {
+        transform: scale(1.1); /* Scale to 110% */
+    }
+    100% {
+        transform: scale(1); /* Return to original size */
+    }
+}
+h1 {
+    font-family: 'Dancing Script', cursive;
+    color: #e94ba7;
+    font: bold;
+    font-style: italic;
+    font-size: 3.2rem;
+}
+
+
+
+
+.card p {
+    font-size: 2rem;
+    margin: 0;
+    color: #e94ba7;
+   
+}
+.card h2 {
+    font-size: 2.0rem;
+    margin: 0;
+    color: #ff6f61;
+}
+
+
+.card p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+ /* Styling for the button container */
+.button-container {
+    display: flex;
+    justify-content: center; /* Centers the buttons horizontally */
+    gap: 10px; /* Adds space between the buttons */
+    margin-top: 20px; /* Adjusts the spacing from the gallery */
+}
+
+button {
+    background: #c71d86;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #e55a4e;
+}
+
+
+footer {
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #ff6f61;
+    text-decoration: none;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin: 2rem auto;
+    max-width: 90%;
+}
+
+.gallery img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    animation: dreamyScale 2.5s ease-in-out infinite;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+@keyframes dreamyScale {
+    0% {
+        transform: scale(1) translateY(0);
+    }
+    50% {
+        transform: scale(1.05) translateY(-5px);
+    }
+    100% {
+        transform: scale(1) translateY(0);
+    }
+}

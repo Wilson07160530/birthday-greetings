@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise Gift Options</title>
+    <link rel="stylesheet" href="gift.css">
+</head>
+<body>
+    <div class="card">
+        <h1>🎁 Surprise Gift Options</h1>
+        <!-- Adding a GIF -->
+        <img src="gif.gif" alt="Gift Animation">
+        <h3>Choose your surprise:</h3>
+        <div class="gift-options">
+            <div class="gift-option">
+                <p>Kain sa Labas</p>
+                <a href="#" onclick="selectOption('Mystery Box')">Select</a>
+            </div>
+            <div class="gift-option">
+                <p>Gifts</p>
+                <a href="#" onclick="selectOption('Gadget Accessory')">Select</a>
+            </div>
+            <div class="gift-option">
+                <p>Kwarta lattan</p>
+                <a href="#" onclick="selectOption('Gadget Accessory')">Select</a>
+            </div>
+            
+        </div>
+        <button onclick="window.location.href='index.html'">Back to Home Page</button>
+    </div>
+    <footer>
+        Made with ❤️ by <a href="https://www.facebook.com/profile.php?id=100009276773276">Wilson</a> 😊
+    </footer>
+
+    <script>
+        function selectOption(option) {
+            const ownerMessengerLink = "https://m.me/100009276773276"; // Replace with Wilson's Messenger link
+            const message = `Hi Wilson, the user has selected the following gift option: ${option}.`;
+
+            // Messenger link format to pre-fill the message
+            const messengerLink = `${ownerMessengerLink}?text=${encodeURIComponent(message)}`;
+            window.location.href = messengerLink;
+        }
+    </script>
+</body>
+</html>
