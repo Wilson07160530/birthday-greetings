@@ -13,6 +13,7 @@ body {
 }
 
 .card {
+    background: #ffc0c0;
     max-width: 600px;
     width: 100%;
     padding: 1.5rem;
