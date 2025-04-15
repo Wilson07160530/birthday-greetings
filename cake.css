@@ -112,15 +112,15 @@ body {
     letter-spacing: 1.4px;
     text-transform: capitalize;
     line-height: 1.3;
-    opacity: 0; /* Start hidden */
-    animation: fadeIn 0.5s forwards; /* Fade in animation */
-    animation-delay: 7.8s; /* Start after cake animation */
-    animation-fill-mode: forwards; /* Keep the final state of the animation */
+    opacity: 0; 
+    animation: fadeIn 0.5s forwards; 
+    animation-delay: 7.8s; 
+    animation-fill-mode: forwards; 
 }
 
 @keyframes fadeIn {
     to {
-        opacity: 1; /* Fade to visible */
+        opacity: 1; 
     }
 }
 
@@ -134,7 +134,7 @@ body {
 
 .text h1 span {
     display: inline-block;
-    opacity: 0; /* Start hidden */
+    opacity: 0;
     animation: showLetter 0.4s ease forwards;
 }
 
@@ -183,7 +183,7 @@ body {
   
   h1 {
     font-size: 2em;
-    color: #e938e0;
+    color: #e94ba7;
     /* animation: scaleText 2s infinite ease-in-out; Continuous scaling animation */
   }
     
@@ -210,12 +210,12 @@ button {
     border-radius: 25px;
     font-size: 1rem;
     cursor: pointer;
-    display: block; /* Changed to block to ensure it takes full width */
-    margin: 20px auto; /* Centers the button horizontally and adds top/bottom space */
+    display: block; 
+    margin: 20px auto; 
     transition: background 0.3s ease;
-    opacity: 0; /* Start hidden */
-    animation: showButton 1s forwards; /* Animation for button */
-    animation-delay: 11s; /* Button appears after 11s, after all other animations */
+    opacity: 0;
+    animation: showButton 1s forwards; 
+    animation-delay: 11s; 
 }
 
 button:hover {
